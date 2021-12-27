@@ -1,15 +1,28 @@
 package arrays;
 
+import java.util.Iterator;
+// line 1
+import java.util.Scanner;
+
 public class ArrayUser {
+	
 	
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		
 		ArraysOperation arrayApp = new ArraysOperation();
-		arrayApp.doInsert(15);
-		arrayApp.doInsert(105);
-		arrayApp.doInsert(85);
-		arrayApp.doInsert(715);
+		
+		System.out.println(" Enter 5 Elements in the array");
+		for(int x = 0;x<5;x++)
+		{
+			System.out.println(" Enter the Element for Array ");
+			arrayApp.doInsert(sc.nextInt());
+			
+		}
+		
+		
 		
 		
 		// ---- Print array old approach
