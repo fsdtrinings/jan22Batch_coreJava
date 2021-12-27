@@ -12,7 +12,7 @@ public class Student {
 		System.out.println("Java Marks :- "+javaMarks);
 	}
 	
-	public void printAngularMarks()
+	public void displayAngularMarks()
 	{
 		System.out.println("Angular Marks :- "+angularMarks);
 	}
@@ -25,7 +25,7 @@ public class Student {
 		System.out.println("  Total Marks :\t "+(javaMarks+angularMarks));
 		
 	}
-	public void editJavaMarks(int newJavaMarks)
+	public void changeJavaMarks(int newJavaMarks)
 	{
 		javaMarks = newJavaMarks;
 	}
