@@ -1,0 +1,22 @@
+package p1;
+
+public class Engine {
+	
+	int power = 0;
+
+	public int getPower() {
+		return power;
+	}
+
+	public void setPower(int power) {
+		this.power = power;
+	}
+
+	@Override
+	public String toString() {
+		return "Engine [power=" + power + "]";
+	}
+	
+	
+
+}
