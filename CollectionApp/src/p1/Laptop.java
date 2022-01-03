@@ -53,6 +53,29 @@ public class Laptop {
 		return "Laptop [id=" + id + ", brandName=" + brandName + ", price=" + price + ", starRating=" + starRating
 				+ "]";
 	}
+
+	@Override
+	public int hashCode() {
+		System.out.println(" hashcode method called for "+brandName+"- "+id);
+		return id+price+starRating+brandName.length();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println(" equals method called for "+brandName+"- "+id);
+		if(obj instanceof Laptop)
+		{
+			Laptop tempLaptop = (Laptop) obj;
+			
+			boolean a = (this.id == tempLaptop.id);
+			boolean b = (this.brandName.equals(tempLaptop.brandName));
+			boolean c = (this.price == tempLaptop.price);
+			boolean d = (this.starRating == tempLaptop.starRating);
+			
+			return a&&b&&c&&d;
+		}
+		else return false;
+	}
 	
 	 
 
