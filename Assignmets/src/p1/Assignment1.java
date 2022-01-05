@@ -7,6 +7,14 @@ import java.util.Map;
 
 public class Assignment1 {
 
+	String blockedDomainName[] = {"whatsapp.com","gmil.com","err.com"};
+	// should throw an exception during insertEmail() operation
+	// BlockedEmailException
+	// if email starts from non-character value (a-z or A-Z are only valid)
+	// then throw InvalidEmailException
+	
+	// NOTE : - Exception should be handled inside main method only
+	
 	public static void main(String[] args) {
 		
 		List<String> emails = new ArrayList<>();
@@ -27,6 +35,8 @@ public class Assignment1 {
 		// 1. Scanner Obj 
 		// 2. read data from Scanner 
 		// 3. insert data into list
+		// 4. Validated email based on blocked domain name and throw an exception
+		
 		
 		return null; // 4. return list 
 	}
