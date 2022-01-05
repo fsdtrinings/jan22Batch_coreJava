@@ -28,6 +28,14 @@ public class Assignment1 {
 		
 	}
 	
+	public void storeInTreeSet(Map<String, List<String>> map)
+	{
+		// In set data should be sorted on the basis of domain name
+		
+		
+		
+	}
+	
 	public List<String> insertEmails(List<String> emails)
 	{
 		// write code to get email from user input and insert into list
