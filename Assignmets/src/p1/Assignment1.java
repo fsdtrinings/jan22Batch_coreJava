@@ -12,6 +12,12 @@ public class Assignment1 {
 		List<String> emails = new ArrayList<>();
 		
 		
+		// step 1  , insert email and print emails  , 10:15 - 10:30
+		
+		
+		
+		// step 2 , filter mails and print map 
+		
 	}
 	
 	public List<String> insertEmails(List<String> emails)
