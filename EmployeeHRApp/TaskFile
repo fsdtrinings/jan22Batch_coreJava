@@ -1,0 +1,14 @@
+Task 1 : Implement all below operations 
+
+System.out.println("\n\n\n ========== HR Application =========");
+			System.out.println("1. Insert Employee ");
+			System.out.println("2. Search Employee By ID");
+			System.out.println("3. Search Employee By Salary Range");
+			System.out.println("4. Search  Employee By Project Name");
+			System.out.println("5. View All Employees");
+			System.out.println("6. Update Employee Salary");
+			System.out.println("7. Update Employee Project");
+			
+      
+  Task 2 : 
+  Add Test file to test the above operations
