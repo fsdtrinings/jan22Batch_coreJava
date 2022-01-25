@@ -10,9 +10,10 @@
 		<property name="hibernate.connection.password">admin</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="show_sql">true</property>
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
 			
 		<mapping class="p1.CityBankAccount" />
+		<mapping class="p1.Policy" />
 
 
 	</session-factory>
