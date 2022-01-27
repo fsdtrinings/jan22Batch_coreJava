@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean class="p1.Account" id="xyz"></bean>
+	 
+	<bean class="p1.Account" id="pqr" >
+		<constructor-arg name="accontNumber" value="123"></constructor-arg>
+		<constructor-arg name="accountName" value="Ramesh Kumar"></constructor-arg>
+		<constructor-arg name="balance" value="2000"></constructor-arg>
+		<constructor-arg name="branchName" value="ABc-123"></constructor-arg>
+		<constructor-arg name="state" value="ABC"></constructor-arg>
+		<constructor-arg name="country" value="MyCountry"></constructor-arg>
+		
+		
+	</bean>
+	
+	<bean class="p1.Account" id="account3"  scope="singleton" autowire="byType" 
+	     init-method="doInitCode"
+	     destroy-method="doWindupCode" >
+		<property name="accontNumber" value="852"></property>
+		<property name="accountName" value="Varun Kumar"></property>
+		<property name="balance" value="3000"></property>
+		<property name="branchName" value="gvgv"></property>
+		<property name="state" value="fdf"></property>
+		<property name="country" value="fgerg"></property>
+		
+		
+		
+		
+	
+	</bean>
+	
+	<bean class="p1.TaxFile" id="file">
+			<property name="fileNumber" value="7777"></property>
+	
+	</bean>
+	
+
+	<bean class="p1.Policy" id="p">
+		<property name="policyId" value="852"></property>
+		<property name="policyName" value="Medical Policy"></property>
+		<property name="sumAssured" value="3000000"></property>
+		<property name="premiumAmount" value="13000"></property>
+		
+	</bean>
+	
+	
+	 
+	 
+</beans>
